@@ -16,7 +16,7 @@
 
         <!-- include paths relative to plugin-directory -->
         <pluginIncludePaths>
-            <path>/PimcoreDependencyInjectionPlugin/lib</path>
+            <path>/PimcoreDiPlugin/lib</path>
         </pluginIncludePaths>
 
         <!-- namespaces to register with autoloader-->

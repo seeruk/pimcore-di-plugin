@@ -16,7 +16,7 @@ final class DefinitionFileLocator
      */
     public static function getSourcePath()
     {
-        return PIMCORE_PLUGINS_PATH . "/PimcoreDependencyInjectionPlugin/container.dist.php";
+        return PIMCORE_PLUGINS_PATH . "/PimcoreDiPlugin/container.dist.php";
     }
 
     /**
