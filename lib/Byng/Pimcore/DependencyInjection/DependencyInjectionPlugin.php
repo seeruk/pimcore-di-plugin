@@ -69,7 +69,7 @@ class DependencyInjectionPlugin extends AbstractPlugin implements PluginInterfac
             copy($sourceFile, $definitionFile);
         }
 
-        return true;
+        return "Dependency injection plugin installed successfully.";
     }
 
     /**
@@ -85,6 +85,6 @@ class DependencyInjectionPlugin extends AbstractPlugin implements PluginInterfac
      */
     public static function isInstalled()
     {
-        return true;
+        return file_exists(DefinitionFileLocator::getPath());
     }
 }
