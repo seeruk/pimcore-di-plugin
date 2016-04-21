@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<zend-config>
+    <plugin>
+        <!-- the plugin name [A-Za-z_] -->
+        <pluginName>PimcoreDependencyInjectionPlugin</pluginName>
+
+        <!-- a short description -->
+        <pluginDescription><![CDATA[PHP-DI based dependency injection.]]></pluginDescription>
+
+        <!-- meta data -->
+        <pluginVersion>0.0.1-alpha</pluginVersion>
+        <pluginRevision>1</pluginRevision>
+
+        <!-- className of the plugin which extends Pimcore_API_Plugin_Abstract-->
+        <pluginClassName>Byng\Pimcore\DependencyInjection\DependencyInjectionPlugin</pluginClassName>
+
+        <!-- include paths relative to plugin-directory -->
+        <pluginIncludePaths>
+            <path>/PimcoreDependencyInjectionPlugin/lib</path>
+        </pluginIncludePaths>
+
+        <!-- namespaces to register with autoloader-->
+        <pluginNamespaces>
+            <namespace>Byng\Pimcore\DependencyInjection</namespace>
+        </pluginNamespaces>
+    </plugin>
+</zend-config>
