@@ -1,6 +1,6 @@
 <?php
 
-namespace Byng\Pimcore\DependencyInjection\Cache;
+namespace SeerUK\Pimcore\DependencyInjection\Cache;
 
 use Doctrine\Common\Cache\Cache;
 use Doctrine\Common\Cache\ClearableCache;

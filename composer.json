@@ -1,5 +1,5 @@
 {
-    "name": "byng/pimcore-di-plugin",
+    "name": "seeruk/pimcore-di-plugin",
     "description": "Pimcore dependency injection plugin",
     "version": "0.1.0",
     "type": "pimcore-plugin",

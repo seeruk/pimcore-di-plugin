@@ -1,6 +1,6 @@
 <?php
 
-namespace Byng\Pimcore\DependencyInjection\Config;
+namespace SeerUK\Pimcore\DependencyInjection\Config;
 
 /**
  * Container Dist File Locator

@@ -1,9 +1,9 @@
 <?php
 
-namespace Byng\Pimcore\DependencyInjection;
+namespace SeerUK\Pimcore\DependencyInjection;
 
-use Byng\Pimcore\DependencyInjection\Cache\PimcoreCache;
-use Byng\Pimcore\DependencyInjection\Config\DefinitionFileLocator;
+use SeerUK\Pimcore\DependencyInjection\Cache\PimcoreCache;
+use SeerUK\Pimcore\DependencyInjection\Config\DefinitionFileLocator;
 use DI\Bridge\ZendFramework1\Dispatcher;
 use DI\Cache\ArrayCache;
 use DI\ContainerBuilder;
