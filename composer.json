@@ -1,0 +1,21 @@
+{
+    "name": "byng/pimcore-di-plugin",
+    "description": "Pimcore dependency injection plugin",
+    "version": "0.0.1",
+    "type": "pimcore-plugin",
+    "license": "MIT",
+    "keywords": [ "pimcore", "di", "plugin" ],
+    "homepage": "https://github.com/SeerUK/pimcore-di-plugin",
+    "authors": [
+        {
+            "name": "Elliot Wright",
+            "email": "hello@elliotdwright.com",
+            "homepage": "https://www.elliotdwright.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "pimcore/installer-plugin": ">=1",
+        "php-di/zf1-bridge": "^3.1"
+    }
+}
