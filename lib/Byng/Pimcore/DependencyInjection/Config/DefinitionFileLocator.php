@@ -10,7 +10,17 @@ namespace Byng\Pimcore\DependencyInjection\Config;
 final class DefinitionFileLocator
 {
     /**
-     * Get destination path
+     * Get source dist definition file path
+     *
+     * @return string
+     */
+    public static function getSourcePath()
+    {
+        return PIMCORE_PLUGINS_PATH . "/PimcoreDependencyInjectionPlugin/container.dist.php";
+    }
+
+    /**
+     * Get definition file path
      *
      * @param null|string $environment
      * @return string

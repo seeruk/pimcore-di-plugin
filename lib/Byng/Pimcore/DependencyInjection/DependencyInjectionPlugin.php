@@ -62,6 +62,13 @@ class DependencyInjectionPlugin extends AbstractPlugin implements PluginInterfac
      */
     public static function install()
     {
+        $definitionFile = DefinitionFileLocator::getPath();
+        $sourceFile = DefinitionFileLocator::getSourcePath();
+
+        if (!file_exists($definitionFile)) {
+            copy($sourceFile, $definitionFile);
+        }
+
         return true;
     }
 
