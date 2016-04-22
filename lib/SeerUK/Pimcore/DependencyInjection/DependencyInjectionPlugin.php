@@ -10,6 +10,7 @@ use DI\ContainerBuilder;
 use Pimcore\API\Plugin\AbstractPlugin;
 use Pimcore\API\Plugin\PluginInterface;
 use Pimcore\Config;
+use SeerUK\Pimcore\DependencyInjection\Config\ParametersFileLocator;
 
 /**
  * Dependency Injection Plugin
@@ -44,9 +45,14 @@ final class DependencyInjectionPlugin extends AbstractPlugin implements PluginIn
         }
 
         $environmentConfigFile = DefinitionFileLocator::getPath($environment);
+        $parametersFile = ParametersFileLocator::getPath();
 
         if (file_exists($environmentConfigFile)) {
             $builder->addDefinitions($environmentConfigFile);
+        }
+
+        if (file_exists($parametersFile)) {
+            $builder->addDefinitions($parametersFile);
         }
 
         $container = $builder->build();
