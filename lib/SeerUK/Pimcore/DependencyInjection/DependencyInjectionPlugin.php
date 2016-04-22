@@ -52,6 +52,8 @@ final class DependencyInjectionPlugin extends AbstractPlugin implements PluginIn
         }
 
         if (file_exists($parametersFile)) {
+            var_dump("File exists!");
+            exit;
             $builder->addDefinitions($parametersFile);
         }
 
