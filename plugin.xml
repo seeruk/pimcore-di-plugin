@@ -8,7 +8,7 @@
         <pluginDescription><![CDATA[PHP-DI based dependency injection.]]></pluginDescription>
 
         <!-- meta data -->
-        <pluginVersion>0.1.2</pluginVersion>
+        <pluginVersion>0.2.1</pluginVersion>
         <pluginRevision>1</pluginRevision>
 
         <!-- className of the plugin which extends Pimcore_API_Plugin_Abstract-->
