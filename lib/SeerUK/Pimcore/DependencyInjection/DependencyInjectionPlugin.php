@@ -16,7 +16,7 @@ use Pimcore\Config;
  *
  * @author Elliot Wright <elliot@elliotwright.co>
  */
-class DependencyInjectionPlugin extends AbstractPlugin implements PluginInterface
+final class DependencyInjectionPlugin extends AbstractPlugin implements PluginInterface
 {
     /**
      * {@inheritdoc}
