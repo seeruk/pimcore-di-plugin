@@ -16,6 +16,6 @@ final class ParametersFileLocator
      */
     public static function getPath()
     {
-        return PIMCORE_WEBSITE_PATH . "/config/parameters.dist.php";
+        return PIMCORE_WEBSITE_PATH . "/config/parameters.php";
     }
 }
