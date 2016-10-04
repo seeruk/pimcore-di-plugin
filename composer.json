@@ -1,7 +1,6 @@
 {
     "name": "seeruk/pimcore-di-plugin",
     "description": "Pimcore dependency injection plugin",
-    "version": "0.2.3",
     "type": "pimcore-plugin",
     "license": "MIT",
     "keywords": [ "pimcore", "di", "plugin" ],
