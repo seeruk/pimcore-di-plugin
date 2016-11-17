@@ -57,8 +57,15 @@ final class DependencyInjectionPlugin extends AbstractPlugin implements PluginIn
 
         $container = $builder->build();
 
+        /** @var \Zend_Controller_Dispatcher_Interface $currentDispatcher */
+        $currentDispatcher = \Zend_Controller_Front::getInstance()->getDispatcher();
+
         $dispatcher = new Dispatcher();
         $dispatcher->setContainer($container);
+        $dispatcher->setControllerDirectory($currentDispatcher->getControllerDirectory());
+        $dispatcher->setDefaultModule($currentDispatcher->getDefaultModule());
+        $dispatcher->setDefaultAction($currentDispatcher->getDefaultAction());
+        $dispatcher->setDefaultControllerName($currentDispatcher->getDefaultControllerName());
 
         \Zend_Controller_Front::getInstance()->setDispatcher($dispatcher);
     }
